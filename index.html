@@ -85,7 +85,14 @@ Available console user management commands and RBAC system.</p>
 <h2>
 <a id="directory-structure" class="anchor" href="#directory-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DIRECTORY STRUCTURE</h2>
 
-<pre><code>common
+<pre><code>api
+    components/          contains components api application
+    config/              contains api application configurations
+    messages/            contains i18n api application
+    modules/             contains modules api version application
+    runtime/             contains files generated during runtime
+    web/                 contains the entry script
+common
     assets/              contains application assets such as JavaScript and CSS
     components/          contains components frontend, backend and console
     config/              contains shared configurations
