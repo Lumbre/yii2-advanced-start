@@ -204,12 +204,13 @@ composer install
 <p>Create a database, default configure yii2-advanced-start in common\config\main-local.php</p>
 
 <pre><code>...
-'components' =&gt; []
+'components' =&gt; [
     'db' =&gt; [
         'dsn' =&gt; 'mysql:host=localhost;dbname=yii2-advanced-start',
         ...
     ],
     ...
+],
 ...
 </code></pre>
 
@@ -313,6 +314,31 @@ RewriteRule . index.php
 </code></pre>
 
 <p>Now frontend is available at <a href="http://mysite.com">http://mysite.com</a>, and backend at <a href="http://mysite.com/admin">http://mysite.com/admin</a>, and api <a href="http://mysite.com/api/v1/user">http://mysite.com/api/v1/user</a></p>
+
+<h2>
+<a id="testing" class="anchor" href="#testing" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TESTING</h2>
+
+<p>Create a database, default configure yii2-advanced-start in common\config\test-local.php</p>
+
+<pre><code>...
+'components' =&gt; [
+    'db' =&gt; [
+        'dsn' =&gt; 'mysql:host=localhost;dbname=yii2-advanced-start_test',
+    ],
+]
+...
+</code></pre>
+
+<p>Apply migration:</p>
+
+<pre><code>php yii_test migrate/up
+</code></pre>
+
+<p>Run in console:</p>
+
+<pre><code>codecept build
+codecept run
+</code></pre>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Dominus77/yii2-advanced-start">Yii2-advanced-start</a> is maintained by <a href="https://github.com/Dominus77">Dominus77</a>.</span>
