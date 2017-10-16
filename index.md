@@ -14,12 +14,15 @@ Base components
 Pages (backend AdminLTE template)
 - Home
 - Users
-- Login and Logout
+- RBAC
+- Profile
+- Login
 
 Pages (frontend)
 - Home
 - Contact
 - Sign Up
+- Profile
 - Login
 
 Modules
@@ -32,6 +35,7 @@ Functional
 - Confirmation by email
 - Last visit
 - Registration Type
+- RBAC Management from the console and web interface
 
 System
 - RBAC (DbManager)
