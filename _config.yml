@@ -2,7 +2,7 @@ title: Yii2-advanced-start
 description: Dominus77, yii2, advanced, template start
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-midnight
+theme: jekyll-theme-cayman
 
 gems:
   - jekyll-mentions
